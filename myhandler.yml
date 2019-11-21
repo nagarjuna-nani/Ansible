@@ -1,0 +1,26 @@
+---
+- hosts: webservers
+  become: yes
+  tasks: 
+  - name: install tree
+    apt:
+     name: tree
+     state: present
+    notify: apache2restart
+    when: ansible_os_family =="Debian"
+  - name: install wget
+    yum:
+     name: wget
+     state: present
+    notify: httpdrestart
+    when: ansible_os_family =="RedHat"
+  
+  handlers:
+  - name: apache2restart
+    service:
+     name: apache2
+     state: restarted
+  - name: httpdrestart
+    service:
+     name: httpd
+     state: restated
