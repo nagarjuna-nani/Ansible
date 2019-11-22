@@ -4,9 +4,9 @@
   tasks:
   - name: loop
     apt:
-     name: "{item}"
+     name: "{{item}}"
      state: present
-    when: "{UB}"
+    when: "{{UB}}"
     
     loop:
      - git
