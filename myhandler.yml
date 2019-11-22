@@ -1,5 +1,5 @@
 ---
-- hosts: webservers
+- hosts: all
   become: yes
   tasks: 
   - name: install tree
@@ -23,4 +23,4 @@
   - name: httpdrestart
     service:
      name: httpd
-     state: restated
+     state: restarted
