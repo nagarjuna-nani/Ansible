@@ -6,6 +6,6 @@
     apt:
      name: apache2
      state: present
-    when: "{%UB%}"
+    when: "{{%UB%}}"
 
 # tasks file for webrole
