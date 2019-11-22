@@ -10,7 +10,7 @@
     when: "{{UB}}"
 
   - name: install tree
-    apt:
+    yum:
      name: tree
      state: present
     tags: 2nd
