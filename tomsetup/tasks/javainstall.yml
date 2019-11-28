@@ -6,4 +6,4 @@
 - name: java
   apt:
    name: default-jdk
-   state: presents
+   state: present
