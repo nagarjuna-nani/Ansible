@@ -6,4 +6,8 @@
 - include_tasks: config.yml
 - include_tasks: permision.yml
 - include_tasks: tomstart.yml
+- include_tasks: tomuser.yml
+- include_tasks: tomrestart.yml
+- include_tasks: deployjava.yml
+- include_tasks: tomrestart.yml
 # tasks file for tomsetup
