@@ -1,2 +1,6 @@
 ---
+- include_tasks: javainstall.yml
+- include_tasks: group.yml
+- include_tasks: tomdown.yml
+- include_tasks: extract.yml
 # tasks file for tomsetup
