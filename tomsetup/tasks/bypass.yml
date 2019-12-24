@@ -1,0 +1,6 @@
+---
+- name: Copy a war file into 
+
+  copy:
+    src: /home/nag/jenkins/Ansible/mahaLogin-1.0.war
+    dest: /opt/tomcat/webapps/mahaLogin.war
