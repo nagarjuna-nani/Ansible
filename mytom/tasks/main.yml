@@ -1,2 +1,12 @@
 ---
 # tasks file for mytom
+
+include_tasks: installjava.yml
+include_tasks: userandgroup.yml
+include_tasks: dowload.yml
+include_tasks: extract.yml
+include_tasks: config.yml
+include_tasks: permissions.yml
+include_tasks: tomstart.yml
+include_tasks: tomuser.yml
+include_tasks: tomrestart.yml
