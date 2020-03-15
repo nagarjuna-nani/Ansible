@@ -1,11 +1,10 @@
 ---
 - name: create folder
   file:
-   path: /opt/tomcat
+   path: /opt/tomcat/
    state: directory
 
 - name: extract
   command: 
-   cmd: sudo tar xzvf /home/ubuntu/apache-tomcat-8*tar.gz -C /opt/tomcat --strip-components=1
+   cmd: sudo tar xzvf /home/nag/apache-tomcat-8.5.5.tar.gz -C /opt/tomcat --strip-components=1
    creates: /opt/tomcat/LICENSE
-   
