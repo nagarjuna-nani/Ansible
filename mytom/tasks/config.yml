@@ -1,5 +1,5 @@
 ---
 - name: tom config 
   template:
-  src: templates/myconfig.j2
-  dest: /etc/systemd/system/tomcat.service
+   src: templates/myconfig.j2
+   dest: /etc/systemd/system/tomcat.service
