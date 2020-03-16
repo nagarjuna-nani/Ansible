@@ -4,4 +4,4 @@ u: apache2
 r: httpd
 UB: ansible_os_family =="Debian"
 Red: ansible_os_family =="RedHat"
-java: openjdk-8
+java: openjdk-1.8
