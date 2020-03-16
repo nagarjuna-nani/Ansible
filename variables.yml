@@ -7,11 +7,11 @@
     apt:
       name: "{{java}}"
       state: present
-      when: "{{UB}}"
-      
+    when: "{{UB}}"
+
   - name: install webserver
     apt:
       name: "{{server}}"
       state: present
-      when: "{{UB}}"
+    when: "{{UB}}"
 
