@@ -1,0 +1,16 @@
+---
+- hosts: webservers
+  become: yes
+  gather_facts: yes
+  tasks:
+  - name: install java
+    apt:
+      name: "{{java}}"
+      state: present
+      when: "{{UB}}"
+  - name: install webserver
+    apt:
+      name: "{{server}}"
+      state: present
+      when: "{{UB}}"
+
