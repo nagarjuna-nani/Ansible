@@ -1,0 +1,22 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: create group "admin"
+    group:
+     name: admin
+     state: present
+  - name: create group "infra"
+    group:
+     name: infra
+     state: present
+  - name: create user "nag"
+    user:
+     name: nag
+     password: nag123
+     shell: /bin/bash
+     groups: admin,infra
+     append: yes
+     
+
+    
