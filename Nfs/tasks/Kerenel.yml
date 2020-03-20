@@ -1,0 +1,14 @@
+---
+- name: install kernel
+  apt:
+   name: nfs-kernel-server
+   state: present
+   notify: update
+  tags: nfs_server
+
+- name: install nfs common
+  apt:
+   name: nfs-common
+   state: present
+   notify: update
+  tags: nfs_client

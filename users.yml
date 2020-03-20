@@ -13,7 +13,7 @@
   - name: create user "nag"
     user:
      name: nag
-     password: nag123
+     password: 'nag123'
      shell: /bin/bash
      groups: admin,infra
      append: yes

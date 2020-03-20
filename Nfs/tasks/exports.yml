@@ -1,0 +1,12 @@
+---
+- name: export 
+  template:
+   src: export.j2
+   dest: /etc/exports
+  tags: nfs_server
+
+- name: fstab
+  template: 
+   src: fstab.j2
+   dest: /etc/fstab
+  tags: nfs_client

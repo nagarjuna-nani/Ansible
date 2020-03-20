@@ -1,2 +1,9 @@
 ---
 # tasks file for Nfs
+
+- include_tasks: kerenel.yml
+- include_tasks: Nfsfolder.yml
+- include_tasks: export.yml
+- include_tasks: service.yml
+- include_tasks: mount.yml
+- include_tasks: test.yml 

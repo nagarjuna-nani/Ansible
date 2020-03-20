@@ -1,0 +1,27 @@
+---
+- name: create a directory
+  file:
+   name: Test
+   path: /var/nfs/general
+   state: directory
+  tags: nfs_server
+
+- name: chown user 
+  file:
+   path: /var/nfs/general
+   state: directory
+   recurse: yes
+   owner: nobody
+   group: nogroup
+  tags: nfs_server
+
+- name: create client folder
+  file:
+   path: /var/nfs/general
+   state: directory
+  tags: nfs_client 
+- name: create home
+  file:
+   path: /nfs/home
+   state: directory
+  tags: nfs_client

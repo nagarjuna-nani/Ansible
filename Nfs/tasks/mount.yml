@@ -1,0 +1,17 @@
+---
+- name: mount the directory
+  mount:
+   path: /nfs/general
+   src: 172.31.38.117:/var/nfs/general
+   fstype: mounted
+   opts: bind
+   state: present
+  tags: nfs_client
+- name: mount home
+  mount:
+   path: /nfs/home
+   src: 172.31.38.117:/nfs/home
+   fstype: mounted
+   opts: bind
+   state: present
+  tags: nfs_client
