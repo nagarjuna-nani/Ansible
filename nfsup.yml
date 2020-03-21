@@ -1,5 +1,12 @@
 ---
-- hosts: all
-  become_user: root
+- hosts: host
+  become: yes
+  gather_facts: false
   roles:
    - {role : Nfs} 
+
+- hosts: client
+  become: yes
+  gather_facts: false
+  roles:
+   - {role : Nfs-client}
