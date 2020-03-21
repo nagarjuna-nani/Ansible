@@ -3,10 +3,9 @@
   file: 
    path: nfs/general/general.test
    state: touch
-  tags: nfs_client
+
 
 - name: crete a file
   file: 
    path: /nfs/home/home.test
    state: touch
-  tags: nfs_client

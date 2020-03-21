@@ -6,7 +6,6 @@
    fstype: mounted
    opts: bind
    state: present
-  tags: nfs_client
 - name: mount home
   mount:
    path: /nfs/home
@@ -14,4 +13,3 @@
    fstype: mounted
    opts: bind
    state: present
-  tags: nfs_client
