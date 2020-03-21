@@ -12,13 +12,3 @@
    recurse: yes
    owner: nobody
    group: nogroup
-
-- name: create client folder
-  file:
-   path: /var/nfs/general
-   state: directory
-  
-- name: create home
-  file:
-   path: /nfs/home
-   state: directory

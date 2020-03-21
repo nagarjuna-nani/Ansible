@@ -1,0 +1,10 @@
+---
+- name: test the general
+  file:
+   path: /nfs/general/general.test
+   state: touch
+
+- name: test the home
+  file:
+   path: /nfs/home/home.test
+   state: touch

@@ -6,6 +6,7 @@
    fstype: mounted
    opts: bind
    state: present
+   
 - name: mount home
   mount:
    path: /nfs/home
