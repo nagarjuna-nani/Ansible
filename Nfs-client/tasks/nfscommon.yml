@@ -1,5 +1,4 @@
 ---
 - name: install nfs common
-  apt:
-   name: nfs-common
-   state: present
+  command:
+   cmd: sudo apt-get install nfs-common
