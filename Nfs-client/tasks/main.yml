@@ -1,2 +1,7 @@
 ---
 # tasks file for Nfs-client
+
+- include_tasks: nfscommon.yml
+- include_tasks: mountfolders.yml
+- include_tasks: mountpoints.yml
+- include_tasks: test.yml
