@@ -4,7 +4,3 @@
    src: export.j2
    dest: /etc/exports
 
-- name: fstab
-  template: 
-   src: fstab.j2
-   dest: /etc/fstab

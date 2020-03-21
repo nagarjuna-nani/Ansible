@@ -1,0 +1,6 @@
+---
+- name: install kernel
+  apt:
+   name: nfs-kernel-server
+   state: present
+  
