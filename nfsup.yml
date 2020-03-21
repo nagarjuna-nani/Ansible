@@ -1,12 +1,14 @@
 ---
 - hosts: host
   become: yes
+  sudo_user: root
   gather_facts: false
   roles:
    - {role : Nfs} 
 
 - hosts: client
   become: yes
+  sudo_user: root
   gather_facts: false
   roles:
    - {role : Nfs-client}
