@@ -1,8 +1,8 @@
 ---
 - name: mount the genaral
   command:
-    cmd: sudo mount 172.31.38.117:/var/nfs/general /nfs/general
+    cmd: sudo mount 172.31.29.73:/var/nfs/general /nfs/general
 
 - name: mount the home
   command:
-    cmd: sudo mount 172.31.38.117:/home /nfs/home
+    cmd: sudo mount 172.31.29.73:/home /nfs/home
